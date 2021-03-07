@@ -7,6 +7,11 @@ const CORS = require('cors');
 const cookieParser = require('cookie-parser');
 const api = require('./api');
 
+
+app.get('/', (req, res) => {
+    res.status(200).send({message: 'success'})
+})
+
 //config
 dotenv.config({path: path.resolve(__dirname, '../.env')})
 const port = process.env.PORT;
