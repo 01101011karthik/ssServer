@@ -20,7 +20,7 @@ const dbCon = process.env.DB_CON;
 
 //middlewares
 app.use(CORS({
-    origin: ['http://localhost:3000'],
+    origin: ['https://ss-stocks.herokuapp.com'],
     credentials: true
 }))
 app.use(express.json())
